@@ -265,9 +265,9 @@ def main():
     lyrics_df = pd.concat(lyrics_dfs).reset_index(drop=True)
 
     # Save outputs to CSV
-    album_final.to_csv('kpop_girl_group_albums.csv', index=False)
-    album_track_df.to_csv('kpop_girl_group_tracks.csv', index=False)
-    lyrics_df.to_csv('kpop_girl_group_lyrics.csv', index=False)
+    album_final.to_csv('data/albums.csv', index=False)
+    album_track_df.to_csv('data/tracks.csv', index=False)
+    lyrics_df.to_csv('data/lyrics.csv', index=False)
 
     logger.info("Scraping completed successfully!")
 
